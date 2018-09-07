@@ -8,7 +8,7 @@ import phptravels.page.QuickBookingPage;
 public class ManageBookingSmokeTest extends FunctionalTest {
 
     @Test
-    void quickBookingHotel() {
+    void quickBookingHotel() throws Exception {
 
         DashboardPage.TopNavigationBar.QUICK_BOOKING.click();
 

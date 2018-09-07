@@ -5,13 +5,17 @@ import org.junit.jupiter.api.BeforeEach;
 import phptravels.driver.Driver;
 import phptravels.page.LoginPage;
 
+import static phptravels.page.LoginPage.loginAs;
+
 public abstract class FunctionalTest {
 
     @BeforeEach
     public void init() {
         Driver.initialize();
         LoginPage.goTo();
-        LoginPage.loginAs("admin@phptravels.com").withPassword("demoadmin").login();
+        loginAs("admin@phptravels.com")
+                .withPassword("demoadmin")
+                .login();
     }
 
     @AfterEach
