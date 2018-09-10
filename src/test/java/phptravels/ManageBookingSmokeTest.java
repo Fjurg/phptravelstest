@@ -16,7 +16,7 @@ public class ManageBookingSmokeTest extends FunctionalTest {
                 .withService(Service.HOTELS)
                 .withDurationToStayInDays(1)
                 .withHotelName(Hotel.RENDEZVOUS_HOTELS)
-                .withRoomName(Room.DELUX_ROOM)
+                .withRoomType(RoomType.DELUX_ROOM)
                 .withPaymentMethod(PaymentMethod.JAZZ_CASH)
                 .withExtras(Extra.CHAMPAGNE)
                 .book();
